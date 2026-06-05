@@ -1,0 +1,34 @@
+:root{
+    --heading:#e37c14;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #232f3e;
+    color: white;
+    padding: 2px;
+}
+
+.heading h1{
+    color: var(--heading);
+}
+
+.search input, .search button{
+    height:25px;
+    vertical-align: middle;
+}
+
+.nav-bar ul{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin-left: 20px;
+}
