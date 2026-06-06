@@ -26,7 +26,7 @@ header{
     display: flex;
     flex-direction: row;
     width:30%;
-    gap:3px;
+    gap:2px;
 }
 
 .search input, .search button{
@@ -36,6 +36,13 @@ header{
 
 .search input{
     width: 100%;
+}
+.search button{
+    background-color: var(--heading);
+    color: black;
+    cursor: pointer;
+    border:none;
+    border-radius: 3px;
 }
 
 .nav-bar ul{
