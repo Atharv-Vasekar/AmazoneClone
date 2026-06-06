@@ -8,6 +8,9 @@
 }
 /* I should give %wise size to elements */
 header{
+    position: fixed;
+    top: 0;
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -76,4 +79,21 @@ header{
     color: #232f3e;
 }
 /* Main Content */
+.add{
+    width:100vw;
+    height: 50vh;
+    background-color:gray ;
+    background-image:url(./Assets/background.avif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow-x: hidden;
+}
 
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background-color: #f7f7f7;
+}
