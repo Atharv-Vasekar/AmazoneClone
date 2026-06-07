@@ -1,5 +1,11 @@
 :root{
     --heading:#e37c14;
+    --header:#0B251A;
+    --background:#F4F1DE;
+    --assets-box:#EAE0D5;
+    --assets-background:#DDA15E;
+    --btn:#B66E5F;
+
 }
 *{
     margin: 0;
@@ -15,7 +21,7 @@ header{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-color: #232f3e;
+    background-color: var(--header);
     color: white;
 }
 .heading h1{
@@ -72,15 +78,14 @@ header{
 .nav-bar ul li:hover{
     background-color: white;
     cursor: pointer;
-    border:2px solid var(--heading);
-    border-radius: 5px;
+    outline:2px solid var(--heading);
+    overflow: hidden;
 }
 .nav-bar ul li:hover a{
     color: #232f3e;
 }
 /* Main Content */
 .add{
-    width:100vw;
     height: 50vh;
     background-color:gray ;
     background-image:url(./Assets/background.avif);
@@ -93,7 +98,16 @@ header{
 .container{
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
     flex-wrap: wrap;
-    background-color: #f7f7f7;
+    justify-content: space-evenly;
+    gap: 20px;
+    background-color: var(--background);
+    overflow-x: hidden;
+    padding: 20px;
+}
+
+.products{
+    width: 280px;
+    height: 400px;
+    background-color: var(--assets-box);
 }
